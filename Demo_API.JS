@@ -72,7 +72,7 @@ connection.query(query,(err,rows,fields)=>{
     username=req.body.username;
     password=req.body.password;
 
-  let update_query="update todo_management.users set first_name=" +`'${first_name}'`+ " , last_name=" +`'${last_name}' ,username='${username}' ,password= '${password}' where id='${id}'`;
+  let update_query="update users set first_name=" +`'${first_name}'`+ " , last_name=" +`'${last_name}' ,username='${username}' ,password= '${password}' where id='${id}'`;
     connection.query(update_query,(err,rows,fields)=>{
         if(err) throw err
         
@@ -115,3 +115,6 @@ connection.query(query,(err,rows,fields)=>{
 app.listen(port,()=>{
     console.log(`Example app listening on port ${port}`);
 });
+
+//firstchangesinvscode
+//secondchanges
