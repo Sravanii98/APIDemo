@@ -93,24 +93,6 @@ connection.query(query,(err,rows,fields)=>{
 
 
 
-//   app.post('/users', (req, res) => {
-//     console.log(req.body);
- 
-//     
-    
-//     let queryid = 
- 
-//     console.log(queryid);
- 
-
-//  connection.query(queryid,(err,rows,fields)=>{
-//      if(err) throw err
- 
-//      res.send("queryid");
-//  });
-    
-//   });
-
  
 app.listen(port,()=>{
     console.log(`Example app listening on port ${port}`);
